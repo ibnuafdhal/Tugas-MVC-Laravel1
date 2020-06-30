@@ -11,22 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-// Route::get('/test', function () {
-//     return "OK";
+// Route::get('/', function () {
+//     return view('welcome');
 // });
 
-Route::get('/home', 'HomeController@home');
+Route::get('/', 'HomeController@home');
 
 Route::get('/register', 'AuthController@register');
 
 Route::post('/welcome2', 'AuthController@welcome2');
-
-// Route::get('/sapa', 'AuthController@sapa');
-
-// Route::post('/welcome', 'AuthController@welcome_post');
-
-// Route::post('/sapa', 'AuthController@sapa_post');
